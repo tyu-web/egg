@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="扭蛋星球開麥拉">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="img/topicon.png" type="image/x-icon">
+    <meta name="description" content="扭蛋星球開麥拉">
+    <meta http-equiv="refresh" content="4;url=index1.html" />
+
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/gallery/style.css">
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: url("img/b_introduce.jpg");
+            background-size: cover;
+        }
+        
+        .egg {
+            position: absolute;
+            opacity: 0;
+            /* text-align: center; */
+            /* line-height: 35; */
+            animation: eggani 3s;
+            /* animation-iteration-count: infinite; */
+            animation-iteration-count: 1;
+            animation-delay: 1.2s;
+            top: 35%;
+            left: 27%;
+            transform: translate(-27%, -35%);
+        }
+        
+        @keyframes eggani {
+            0% {
+                opacity: 1;
+                transform: scale(0, 0);
+            }
+            20% {
+                opacity: 1;
+                transform: scale(2.5, 2.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1, 1);
+            }
+        }
+        
+        .egg_rwd {
+            display: none;
+            position: absolute;
+            opacity: 0;
+            /* text-align: center; */
+            /* line-height: 35; */
+            animation: eggani 4.5s;
+            /* animation-iteration-count: infinite; */
+            animation-iteration-count: 1;
+            animation-delay: 1.2s;
+            top: 30%;
+            left: 30%;
+            transform: 6 translate(-30%, -30%);
+        }
+        
+        .container {
+            width: 1500px;
+        }
+        
+        .box1 {
+            opacity: 0;
+            top: 0;
+            left: 0;
+            float: left;
+            width: 50%;
+            /* border: 3px solid #fff; */
+            height: 1620px;
+            background: url("img/b1.jpg");
+            background-size: cover;
+            animation: box1ani 1.5s;
+            /* animation-iteration-count: infinite; */
+            animation-iteration-count: 1;
+            /* animation-delay: 1.5s; */
+        }
+        
+        @keyframes box1ani {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+                /* transform
+                : scale(0, 0); */
+            }
+            100% {
+                transform: translateX(-700px);
+                opacity: 0;
+            }
+        }
+        
+        .box2 {
+            opacity: 0;
+            top: 0;
+            right: 0;
+            float: right;
+            width: 50%;
+            /* border: 3px solid #fff; */
+            height: 1620px;
+            background: url("img/b1.jpg");
+            background-size: cover;
+            animation: box2ani 1.5s;
+            animation-iteration-count: infinite;
+            animation-iteration-count: 1;
+            /* animation-delay: 1.5s; */
+        }
+        
+        @keyframes box2ani {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(700px);
+                opacity: 0;
+            }
+        }
+        
+        @media (max-width:1000px) {
+            .egg {
+                display: none;
+            }
+            .egg_rwd {
+                display: block;
+            }
+        }
+        
+        @media (max-width:600px) {
+            .egg {
+                display: none;
+            }
+            .egg_rwd {
+                display: block;
+                top: 20%;
+                left: 7%;
+                transform: 6 translate(-7%, -20%);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="star">
+        <div class="box1"><img src="" class="img-fluid"></div>
+        <div class="box2"><img src="" class="img-fluid"></div>
+
+        <div class="egg"><img src="img/logo_H3.png" alt=""></div>
+        <div class="egg_rwd"><img src="img/logo_S3.png" alt=""></div>
+
+    </div>
+
+</body>
+
+</html>
